@@ -7,7 +7,7 @@ Enter in the domain name in format <Domain>.<TopLevelDomain> eg. amazon.com
 The program will craft a DNS message and query it to a Google DNS server for data. Once the data is received, the program will attempt to translate the data to a readable format.
 
 The translation will be in format:  
- ## Header
+ ### Header
  - header.ID: 16 bit id uniquely identify query message.
  - header.QR: Identify where its a query(0) or response(1).
  - header.OPCODE:Specifies kind of query in this message.
@@ -21,11 +21,11 @@ The translation will be in format:
  - header.ANCOUNT: Number of answers in the message.
  - header.NSCOUNT: Number of resource records authority section of message.
  - heeader.ARCOUNT: Number of resource records in additional section of message.
-**Question**
+### Question
  - question.QNAME: The domain name that is being queried.
  - question.QTYPE: Specifies the type of query.
  - question.QCLASS: Specifies the class of the query.
-**Answer**
+### Answer
  - answer.NAME: The domain name that is being queried.
  - answer.TYPE: Specifies the type of data being sent to RDATA.
  - answer.CLASS: Specifies the class of data in RDATA.
